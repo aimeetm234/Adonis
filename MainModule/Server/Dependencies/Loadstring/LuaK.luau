@@ -102,7 +102,7 @@ function luaK:nummod(a, b) return a % b end
   -- ((a) - floor((a)/(b))*(b)) /* actual, for reference */
 function luaK:numpow(a, b) return a ^ b end
 function luaK:numunm(a) return -a end
-function luaK:numisnan(a) return not a == a end
+function luaK:numisnan(a) return a ~= a end
   -- a NaN cannot equal another NaN
 
 --[[--------------------------------------------------------------------
