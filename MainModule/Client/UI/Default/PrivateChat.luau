@@ -124,7 +124,7 @@ return function(data, env)
 		playerList.CanvasSize = UDim2.new(0, 0, 0, lObj.AbsoluteContentSize.Y)
 	end;
 
-	function newMessage(data)
+	local function newMessage(data)
 		local pName = data.PlayerName;
 		local pDisplayName = pName ~= "*SYSTEM*" and data.PlayerDisplayName
 		local msg = data.Message;
