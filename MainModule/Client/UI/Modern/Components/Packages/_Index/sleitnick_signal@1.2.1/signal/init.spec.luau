@@ -42,7 +42,7 @@ return function()
 		end)
 
 		it("should create a proxy signal and connect to it", function()
-			local signalWrap = Signal.Wrap(game:GetService("RunService").Heartbeat)
+			local signalWrap = Signal.Wrap(game:GetService("RunService").PostSimulation)
 			expect(Signal.Is(signalWrap)).to.equal(true)
 			local fired = false
 			signalWrap:Connect(function()

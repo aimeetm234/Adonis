@@ -575,7 +575,7 @@ return function(errorHandler, eventChecker, fenceSpecific, env)
 
 		Timer = function(t, func, check) -- Unused
 			local start = time()
-			local event; event = service.RunService.RenderStepped:Connect(function()
+			local event; event = service.RunService.PreRender:Connect(function()
 				if time() - start > t or check and check() then
 					func()
 					event:Disconnect()
@@ -1220,19 +1220,19 @@ return function(errorHandler, eventChecker, fenceSpecific, env)
 				elseif delay == "Heartbeat" then
 					repeat
 						func()
-						service.RunService.Heartbeat:wait()
+						service.RunService.PostSimulation:wait()
 					until RunningLoops[index] ~= tab or not tab.Running
 					kill()
 				elseif delay == "RenderStepped" then
 					repeat
 						func()
-						service.RunService.RenderStepped:wait()
+						service.RunService.PreRender:wait()
 					until RunningLoops[index] ~= tab or not tab.Running
 					kill()
 				elseif delay == "Stepped" then
 					repeat
 						func()
-						service.RunService.Stepped:wait()
+						service.RunService.PreSimulation:wait()
 					until RunningLoops[index] ~= tab or not tab.Running
 					kill()
 				else
@@ -1334,9 +1334,9 @@ return function(errorHandler, eventChecker, fenceSpecific, env)
 		end;
 		Wait = function(mode)
 			if not mode or mode == "Stepped" then
-				service.RunService.Stepped:wait()
+				service.RunService.PreSimulation:wait()
 			elseif mode == "Heartbeat" then
-				service.RunService.Heartbeat:wait()
+				service.RunService.PostSimulation:wait()
 			elseif mode and tonumber(mode) then
 				wait(tonumber(mode))
 			end

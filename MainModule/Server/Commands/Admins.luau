@@ -748,7 +748,7 @@ return function(Vargs, env)
 				for _, obj in workspace:GetChildren() do
 					if obj.ClassName ~= "Terrain" and not service.Players:GetPlayerFromCharacter(obj) then
 						obj:Destroy()
-						service.RunService.Stepped:Wait()
+						service.RunService.PreSimulation:Wait()
 					end
 				end
 

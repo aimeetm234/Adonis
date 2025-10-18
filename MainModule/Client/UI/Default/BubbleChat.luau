@@ -40,7 +40,7 @@ return function(data, env)
 			
 			window:BindEvent(service.UserInputService.InputBegan, function(inputObject, gameProcessed)
 				if not gameProcessed and inputObject.UserInputType == Enum.UserInputType.Keyboard and inputObject.KeyCode == Enum.KeyCode.Semicolon then
-					service.RunService.RenderStepped:Wait()
+					service.RunService.PreRender:Wait()
 					box:CaptureFocus()
 				end
 			end)

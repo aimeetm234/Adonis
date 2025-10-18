@@ -4,7 +4,7 @@ local posed = false
 local type = script:WaitForChild("Type").Value
 local int = tonumber(script:WaitForChild("Num").Value) or 50
 
-game:GetService("RunService").RenderStepped:Connect(function()
+game:GetService("RunService").PreRender:Connect(function()
 	if type == "ghost" then
 		torso.CFrame += Vector3.new(tonumber(int) * (posed and 4 or -2), 0, 0)
 	elseif type == "trippy" then

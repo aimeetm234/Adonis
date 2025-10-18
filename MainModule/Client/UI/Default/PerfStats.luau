@@ -40,7 +40,7 @@ return function(data, env)
 		repeat
 			label.Text = string.format(
 				"Render: %.1f fps\nPhysics: %.1f fps\nPing: %d ms",
-				1 / service["RunService"].RenderStepped:Wait(),
+				1 / service["RunService"].PreRender:Wait(),
 				workspace:GetRealPhysicsFPS(),
 				service.Players.LocalPlayer:GetNetworkPing() * 1000
 			)

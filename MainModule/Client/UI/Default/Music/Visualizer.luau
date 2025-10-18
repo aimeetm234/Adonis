@@ -82,7 +82,7 @@ function module.new(Frame, BarCount)
 
 		if Sound.Playing then
 			local LastStored = os.clock()
-			Visualizer.BufferConnection = RunService.Heartbeat:Connect(function()
+			Visualizer.BufferConnection = RunService.PostSimulation:Connect(function()
 				local success, void = pcall(function()
 					Visualizer.VolumeBuffer[1] = Sound.PlaybackLoudness
 					Visualizer.Bars[BUFFER_COUNT]:TweenSize(
