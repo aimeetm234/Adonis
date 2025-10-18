@@ -4,11 +4,6 @@
 	<External>nil</External>
 	<Item class="Script" referent="RBX2BAF457A21C4452BAE4B43A01C17D0A3">
 		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<bool name="Disabled">true</bool>
-			<Content name="LinkedSource"><null></null></Content>
-			<string name="Name">R15Animate</string>
-			<string name="ScriptGuid"></string>
 			<ProtectedString name="Source"><![CDATA[function   waitForChild(parent, childName)
 	local child = parent:FindFirstChild(childName)
 	if child then return child end
@@ -441,15 +436,6 @@ function animateTool()
 	end
 end
 
-function moveSit()
-	RightShoulder.MaxVelocity = 0.15
-	LeftShoulder.MaxVelocity = 0.15
-	RightShoulder:SetDesiredAngle(3.14 /2)
-	LeftShoulder:SetDesiredAngle(-3.14 /2)
-	RightHip:SetDesiredAngle(3.14 /2)
-	LeftHip:SetDesiredAngle(-3.14 /2)
-end
-
 local lastTick = 0
 
 function move(time)
@@ -483,7 +469,7 @@ function move(time)
 	local tool = getTool()
 	if tool and (tool.RequiresHandle or tool:FindFirstChild("Handle")) then
 	
-		animStringValueObject = getToolAnim(tool)
+		local animStringValueObject = getToolAnim(tool)
 
 		if animStringValueObject then
 			toolAnim = animStringValueObject.Value
@@ -536,21 +522,33 @@ end
 
 
 ]]></ProtectedString>
+			<bool name="Disabled">true</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<token name="RunContext">0</token>
+			<string name="ScriptGuid">{A0A580B9-FC92-45D6-ABEE-BE312F74F100}</string>
+			<BinaryString name="AttributesSerialize"></BinaryString>
+			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+			<bool name="DefinesCapabilities">false</bool>
+			<string name="Name">R15Animate</string>
 			<int64 name="SourceAssetId">-1</int64>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 		<Item class="StringValue" referent="RBXB24C1A55354F481BB2F0EA4D779F2627">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">climb</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBXCE0790CA261A42678577541FE8C016F9">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507765644</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">ClimbAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -559,16 +557,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX00831549A8CA47E88D6C466581CB9C04">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">fall</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX450D02BB69604581A6841527474E7B1D">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507767968</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">FallAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -577,27 +579,33 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX4F1F4594B84B4973BE38E3E2718BE001">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">idle</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX3E5C4FA8BF81426D8CCE619B5C34D3DA">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507766388</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Animation1</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 				<Item class="NumberValue" referent="RBX7C0A3DAE911848F89290619E7B51C6F4">
 					<Properties>
+						<double name="Value">9</double>
 						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">Weight</string>
 						<int64 name="SourceAssetId">-1</int64>
 						<BinaryString name="Tags"></BinaryString>
-						<double name="Value">9</double>
 					</Properties>
 				</Item>
 			</Item>
@@ -605,33 +613,41 @@ end
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507766666</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Animation2</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 				<Item class="NumberValue" referent="RBXB8FB98B72B434AC681B76A199DE41E58">
 					<Properties>
+						<double name="Value">1</double>
 						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
 						<string name="Name">Weight</string>
 						<int64 name="SourceAssetId">-1</int64>
 						<BinaryString name="Tags"></BinaryString>
-						<double name="Value">1</double>
 					</Properties>
 				</Item>
 			</Item>
 		</Item>
 		<Item class="StringValue" referent="RBX325BEE78F3C84DAAA7C5F3C02419C9CE">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">jump</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX74BD88CB901D4E749429B6C9BCC5111A">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507765000</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">JumpAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -640,16 +656,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX923D8A4727694F4EB63FDCB8CA060DF4">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">run</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX292A843210D44C4DB1EB52FD30C3248F">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=5077677142</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">RunAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -658,16 +678,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX367F5C751FE64541A1C5BC1E55CF579C">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">sit</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBXFA4F54345B414D7DA3971B50FB2E8868">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507768133</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">SitAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -676,16 +700,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBXACD314B0EFFC4B0A958EA24663E45C65">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">swim</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBXE046DD8A965A4A6AA90A89763049A0CF">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507784897</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">Swim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -694,16 +722,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX3DB2C6ABE8D14C2B9970EE5F8BBC5027">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">swimidle</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX68D703D30F3A4785A21AECB79E7B27DF">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=481825862</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">SwimIdle</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -712,16 +744,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBX615080E38C7D42FA9EDF6CF4C41BD63C">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">toolnone</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBX5DB95497ACF24C92A00B571EB8D68312">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507768375</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">ToolNoneAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
@@ -730,16 +766,20 @@ end
 		</Item>
 		<Item class="StringValue" referent="RBXCB49929DF85344E482E3FA0114E7A94C">
 			<Properties>
+				<string name="Value"></string>
 				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">walk</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<BinaryString name="Tags"></BinaryString>
-				<string name="Value"></string>
 			</Properties>
 			<Item class="Animation" referent="RBXE3F8A51505A34BF49D918D490F19C0E2">
 				<Properties>
 					<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507777826</url></Content>
 					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
 					<string name="Name">RunAnim</string>
 					<int64 name="SourceAssetId">-1</int64>
 					<BinaryString name="Tags"></BinaryString>
