@@ -727,7 +727,7 @@ return function(Vargs, GetEnv)
 							Desc = "Player data was not saved to the datastore due to it being already saved.";
 						})
 					elseif not Functions.LaxCheckMatch(Core.DefaultPlayerData(p), data, CompareOptions) or Core.SavedPlayerData[p.UserId] and not (Functions.LaxCheckMatch(Core.SavedPlayerData[p.UserId], data, CompareOptions) or Functions.LaxCheckMatch(data, Core.SavedPlayerData[p.UserId], CompareOptions)) then
-						Core.SetData(key, data)
+						Core.SetData(key, data, nil, {p.UserId})
 						Core.SavedPlayerData[p.UserId] = data
 						AddLog(Logs.Script, {
 							Text = `Saved data for {p.Name}`;
@@ -852,7 +852,7 @@ return function(Vargs, GetEnv)
 			end
 		end;
 
-		SetData = function(key: string, value: any?, repeatCount: number?)
+		SetData = function(key: string, value: any?, repeatCount: number?, userIds: {number}?)
 			if repeatCount then
 				warn(`Retrying SetData request for {key}`);
 			end
@@ -863,7 +863,7 @@ return function(Vargs, GetEnv)
 					return Core.RemoveData(key)
 				else
 					local ran2, err2 = Queue(`DataStoreWriteData{key}`, function()
-						local ran, ret = Core.DS_WriteLimiter("Write", DataStore.SetAsync, DataStore, Core.DataStoreEncode(key), value)
+						local ran, ret = Core.DS_WriteLimiter("Write", DataStore.SetAsync, DataStore, Core.DataStoreEncode(key), value, userIds)
 						if ran then
 							Core.DataCache[key] = value
 						else
@@ -877,9 +877,9 @@ return function(Vargs, GetEnv)
 						--// Attempt 3 times, with slight delay between if failed
 						task.wait(1)
 						if not repeatCount then
-							return Core.SetData(key, value, 3);
+							return Core.SetData(key, value, 3, userIds);
 						elseif repeatCount > 0 then
-							return Core.SetData(key, value, repeatCount - 1);
+							return Core.SetData(key, value, repeatCount - 1, userIds);
 						end
 					end
 				end
