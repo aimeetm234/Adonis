@@ -2289,9 +2289,9 @@ return function(Vargs, env)
 						frc.Force = Vector3.new(0, 0, 0)
 						for _, prt in v.Character:GetChildren() do
 							if prt:IsA("BasePart") then
-								frc.Force -= Vector3.new(0, prt:GetMass()*tonumber(args[2]), 0)
+								frc.Force -= Vector3.new(0, prt.Mass*tonumber(args[2]), 0)
 							elseif prt:IsA("Accoutrement") then
-								frc.Force -= Vector3.new(0, prt.Handle:GetMass()*tonumber(args[2]), 0)
+								frc.Force -= Vector3.new(0, prt.Handle.Mass*tonumber(args[2]), 0)
 							end
 						end
 					end
@@ -2324,9 +2324,9 @@ return function(Vargs, env)
 						frc.Force = Vector3.new(0, 0, 0)
 						for _, prt in v.Character:GetChildren() do
 							if prt:IsA("BasePart") then
-								frc.Force += Vector3.new(0, prt:GetMass()*workspace.Gravity, 0)
+								frc.Force += Vector3.new(0, prt.Mass*workspace.Gravity, 0)
 							elseif prt:IsA("Accoutrement") then
-								frc.Force += Vector3.new(0, prt.Handle:GetMass()*workspace.Gravity, 0)
+								frc.Force += Vector3.new(0, prt.Handle.Mass*workspace.Gravity, 0)
 							end
 						end
 					end
