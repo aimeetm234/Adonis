@@ -5879,7 +5879,7 @@ return function(Vargs, env)
 					service.StartLoop("MusicShuffle", 1, function()
 						local ind = idList[math.random(1, #idList)]
 						s.SoundId = `http://www.roblox.com/asset/?id={ind.ID}`
-						s.Pitch = ind.Pitch
+						s.PlaybackSpeed = ind.Pitch
 						s:Play()
 						wait(0.5)
 						wait(s.TimeLength+1)
@@ -5979,7 +5979,7 @@ return function(Vargs, env)
 					s.Name = "ADONIS_SOUND"
 					s.SoundId = `http://www.roblox.com/asset/?id={id}`
 					s.Volume = volume
-					s.Pitch = pitch
+					s.PlaybackSpeed = pitch
 					s.Looped = looped
 					s.Archivable = false
 					s.Parent = service.SoundService

@@ -1519,7 +1519,7 @@ return function(Vargs, env)
 						van.Parent = workspace
 						humanoid.WalkSpeed = 0
 						char:SetAttribute("ADONIS_Taken", true)
-						sound.Pitch = 1.3
+						sound.PlaybackSpeed = 1.3
 						Remote.Send(p, "Function", "SetCore", "ResetButtonCallback", false)
 						Remote.PlayAudio(p, 421358540, 0.2, 1, true)
 
@@ -1538,7 +1538,7 @@ return function(Vargs, env)
 							Volume = 1;
 						}):Play()
 
-						sound.Pitch = 0.9
+						sound.PlaybackSpeed = 0.9
 
 						task.wait(0.5)
 						if check() then
@@ -1556,7 +1556,7 @@ return function(Vargs, env)
 						end
 						task.wait(0.5)
 
-						sound.Pitch = 1.3
+						sound.PlaybackSpeed = 1.3
 						Remote.MakeGui(p, "Effect", {
 							Mode = "FadeOut";
 						})
@@ -1699,7 +1699,7 @@ return function(Vargs, env)
 						sound.Looped=true
 						sound:Play()
 						sound.Volume=1
-						sound.Pitch=0.8
+						sound.PlaybackSpeed=0.8
 						local light=Instance
 
 						function fling(part)
@@ -2488,7 +2488,7 @@ return function(Vargs, env)
 						light.Enabled = false
 						task.wait(0.2)
 						sound.Volume = 0.5
-						sound.Pitch = 0.8
+						sound.PlaybackSpeed = 0.8
 						sound:Play()
 						light.Enabled = true
 						task.wait(1/100)
@@ -2532,7 +2532,7 @@ return function(Vargs, env)
 						part3.Rotation = Vector3.new(0, 0, -11.128)
 						sound.SoundId = "rbxassetid://130818250"
 						sound.Volume = 1
-						sound.Pitch = 1
+						sound.PlaybackSpeed = 1
 						sound:Play()
 						task.wait()
 						part1.Transparency = 1

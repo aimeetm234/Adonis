@@ -1349,7 +1349,7 @@ return function(Vargs, GetEnv)
 			sound.SoundId = `rbxassetid://{audioId}`
 			if looped then sound.Looped = true end
 			if volume then sound.Volume = volume end
-			if pitch then sound.Pitch = pitch end
+			if pitch then sound.PlaybackSpeed = pitch end
 			sound.Name = `ADONIS_LOCAL_SOUND {audioId}`
 			sound.Parent = service.LocalContainer()
 			Variables.localSounds[tostring(audioId)] = sound
