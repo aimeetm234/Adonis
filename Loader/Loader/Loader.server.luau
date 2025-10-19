@@ -2,13 +2,13 @@
 --[[
 
 	CURRENT LOADER:
-	https://www.roblox.com/library/7510622625/Adonis-Admin-Loader-Epix-Incorporated
+	https://create.roblox.com/store/asset/7510622625/Adonis-Admin-Loader-Epix-Incorporated
 
 	CURRENT MODULE:
-	https://www.roblox.com/library/7510592873/Adonis-MainModule
+	https://create.roblox.com/store/asset/7510592873/Adonis-MainModule
 
 	NIGHTLY MODULE:
-	https://www.roblox.com/library/8612978896/Nightlies-Adonis-MainModule
+	https://create.roblox.com/store/asset/8612978896/Nightlies-Adonis-MainModule
 
 --]]
 
@@ -110,13 +110,13 @@ else
 		Runner = runner;
 		LoaderVersion = (model and model:FindFirstChild("Version")) and tonumber(model.Version.Value);
 
-		ModuleID = 7510592873;  		--// https://www.roblox.com/library/7510592873/Adonis-MainModule
-		LoaderID = 7510622625;			--// https://www.roblox.com/library/7510622625/Adonis-Loader-Sceleratis-Davey-Bones-Epix
+		ModuleID = 7510592873;  		--// https://create.roblox.com/store/asset/7510592873/Adonis-MainModule
+		LoaderID = 7510622625;			--// https://create.roblox.com/store/asset/7510622625/Adonis-Loader-Sceleratis-Davey-Bones-Epix
 		
 		--// Note: The nightly module is updated frequently with every commit merged to the master branch on the Adonis repo.
 		--// It is prone to breaking, unstable, untested, and should not be used for anything other than testing/feature preview.
 		NightlyMode = true;			--// If true, uses the nightly module instead of the current release module.
-		NightlyModuleID = 8612978896; 	--// https://www.roblox.com/library/8612978896/Nightlies-Adonis-MainModule
+		NightlyModuleID = 8612978896; 	--// https://create.roblox.com/store/asset/8612978896/Nightlies-Adonis-MainModule
 
 		--// Module used in case MainModule is unavailable, containing only essential commands
 		Backup = 17438792001; 	--// https://create.roblox.com/store/asset/17438792001/
@@ -191,7 +191,7 @@ else
 	end
 
 	if tonumber(moduleId) and not data.SilentStartup then
-		print(`Requiring Adonis MainModule; Model URL: https://www.roblox.com/library/{moduleId}`)
+		print(`Requiring Adonis MainModule; Model URL: https://create.roblox.com/store/asset/{moduleId}`)
 	end
 
 	local success, module = pcall(require, moduleId)

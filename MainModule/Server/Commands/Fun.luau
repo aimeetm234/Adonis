@@ -153,9 +153,9 @@ return function(Vargs, env)
 
 				--// Apparently Rojo doesn't handle mesh parts very well, so I'm loading this remotely (using require to bypass insertservice restrictions)
 				--// The model is free to take so feel free to that 👍
-				--// Here's the URL https://www.roblox.com/library/7679952474/Adonis-Assets-Module
+				--// Here's the URL https://create.roblox.com/store/asset/7679952474/Adonis-Assets-Module
 				if not gerald then -- TODO: Add gerald to deps and remove require, I think the Rojo plugin (up to date) now supports loading
-					warn("Requiring Assets Module by ID; Expand for module URL > ", {URL = "https://www.roblox.com/library/7679952474/Adonis-Assets-Module"})
+					warn("Requiring Assets Module by ID; Expand for module URL > ", {URL = "https://create.roblox.com/store/asset/7679952474/Adonis-Assets-Module"})
 					gerald = require(7679952474).Gerald --// This apparently caches, so don't delete anything else future usage breaks
 				end
 

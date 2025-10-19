@@ -19,7 +19,7 @@ return function(Vargs, GetEnv)
 			Logs:AddLog("Script", "Loading alerts from cloud module")
 			xpcall(function()
 				if not server.Core.SilentStartup then
-					print("Requiring Alerts Module by ID; Expand for module URL > ", {URL = `https://www.roblox.com/library/{Variables.UrgentModuleId}/Adonis-Alerts-Module`})
+					print("Requiring Alerts Module by ID; Expand for module URL > ", {URL = `https://create.roblox.com/store/asset/{Variables.UrgentModuleId}/Adonis-Alerts-Module`})
 				end
 		
 				local alertTab = require(Variables.UrgentModuleId)
