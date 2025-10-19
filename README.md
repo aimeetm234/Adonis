@@ -4,8 +4,8 @@
 
 <div>&nbsp;</div>
 
-[![Roblox model](https://img.shields.io/static/v1?label=roblox&message=model&color=blue&logo=roblox&logoColor=white)](https://www.roblox.com/library/7510622625/ "The offical Adonis admin model.")
-[![Roblox nightly](https://img.shields.io/badge/roblox-nightly-blueviolet?logo=roblox)](https://www.roblox.com/library/8612978896/ "The beta testing source code modulescript.")
+[![Roblox model](https://img.shields.io/static/v1?label=roblox&message=model&color=blue&logo=roblox&logoColor=white)](https://create.roblox.com/store/asset/7510622625/ "The offical Adonis admin model.")
+[![Roblox nightly](https://img.shields.io/badge/roblox-nightly-blueviolet?logo=roblox)](https://create.roblox.com/store/asset/8612978896/ "The beta testing source code modulescript.")
 [![LICENSE](https://img.shields.io/github/license/Epix-Incorporated/Adonis)](https://github.com/Epix-Incorporated/Adonis/blob/master/LICENSE.md "The legal LICENSE governing the usage of the admin system.")
 [![releases](https://img.shields.io/github/v/release/Epix-Incorporated/Adonis?label=version)](https://github.com/Epix-Incorporated/Adonis/releases "Downloadable versions of the admin system.")
 [![Discord server](https://img.shields.io/discord/81902207070380032?label=discord&logo=discord&logoColor=white)](https://dvr.cx/discord "A Discord server where people can discuss Adonis related stuff and talk.")
@@ -25,7 +25,7 @@ If you get stuck, feel free to ask for assistance on our [Discord server](https:
 
 ### Method 1 (recommended): Official Roblox Model
 
-1. [Take a copy](https://www.roblox.com/library/7510622625/) of the Adonis loader model from the Roblox Library.
+1. [Take a copy](https://create.roblox.com/store/asset/7510622625/) of the Adonis loader model from the Roblox Library.
 2. Insert the model into Studio using the Toolbox, and place it under `ServerScriptService`. (Do not leave it in the `Workspace`!)
 
 ### Method 2: GitHub Releases
@@ -68,9 +68,9 @@ The Adonis loader provides a `DebugMode` option which will load a local copy of 
 1. Open `Adonis_Loader` > `Loader` > `Loader`
 2. Change `DebugMode` at the end of the `data` table to the desired value (e.g. `DebugMode = false`)
 
-* Official Adonis Loader: <https://www.roblox.com/library/7510622625/Adonis-Admin-Loader-Epix-Incorporated>
-* Official MainModule: <https://www.roblox.com/library/7510592873/Adonis-MainModule>
-* Nightly MainModule: <https://www.roblox.com/library/8612978896/Nightlies-Adonis-MainModule>
+* Official Adonis Loader: <https://create.roblox.com/store/asset/7510622625/Adonis-Admin-Loader-Epix-Incorporated>
+* Official MainModule: <https://create.roblox.com/store/asset/7510592873/Adonis-MainModule>
+* Nightly MainModule: <https://create.roblox.com/store/asset/8612978896/Nightlies-Adonis-MainModule>
 
 ### Reference
 
