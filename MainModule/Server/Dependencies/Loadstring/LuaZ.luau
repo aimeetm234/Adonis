@@ -70,22 +70,6 @@ function luaZ:make_getS(buff)
 end
 
 ------------------------------------------------------------------------
--- create a chunk reader from a source file
-------------------------------------------------------------------------
---[[
-function luaZ:make_getF(filename)
-  local LUAL_BUFFERSIZE = 512
-  local h = io.open(filename, "r")
-  if not h then return nil end
-  return function() -- chunk reader anonymous function here
-    if not h or io.type(h) == "closed file" then return nil end
-    local buff = h:read(LUAL_BUFFERSIZE)
-    if not buff then h:close(); h = nil end
-    return buff
-  end
-end
---]]
-------------------------------------------------------------------------
 -- creates a zio input stream
 -- returns the ZIO structure, z
 ------------------------------------------------------------------------
