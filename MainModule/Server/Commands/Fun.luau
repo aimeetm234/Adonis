@@ -1693,7 +1693,7 @@ return function(Vargs, env)
 						local sound=Instance.new("Sound", main)
 						smoke.RiseVelocity=25
 						smoke.Size=25
-						smoke.Color=Color3.new(170/255, 85/255, 0)
+						smoke.Color=Color3.fromRGB(170, 85, 0)
 						smoke.Opacity=1
 						sound.SoundId="rbxassetid://142840797"
 						sound.Looped=true
@@ -2482,7 +2482,7 @@ return function(Vargs, env)
 						mesh.Scale = Vector3.new(30, 30, 40)
 						mesh.VertexColor = Vector3.new(0.3, 0.3, 0.3)
 						local light = service.New("PointLight", cloud)
-						light.Color = Color3.new(0, 85/255, 1)
+						light.Color = Color3.fromRGB(0, 85, 255)
 						light.Brightness = 10
 						light.Range = 30
 						light.Enabled = false
@@ -2555,7 +2555,7 @@ return function(Vargs, env)
 			Function = function(plr: Player, args: {string})
 				service.StopLoop("LightingTask")
 				service.StartLoop("LightingTask", 0.5, function()
-					local color = Color3.new(math.random(255)/255, math.random(255)/255, math.random(255)/255)
+					local color = Color3.fromRGB(math.random(255), math.random(255), math.random(255))
 					Functions.SetLighting("Ambient", color)
 					Functions.SetLighting("OutdoorAmbient", color)
 					Functions.SetLighting("FogColor", color)

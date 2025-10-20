@@ -108,7 +108,7 @@ return function(data, env)
 
 		while gui and gui.Parent do
 			task.wait(1/44)
-			bg.BackgroundColor3 = Color3.new(math.random(255)/255, math.random(255)/255, math.random(255)/255)
+			bg.BackgroundColor3 = Color3.fromRGB(math.random(255), math.random(255), math.random(255))
 		end
 
 		if gui then gui:Destroy() end

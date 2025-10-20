@@ -57,7 +57,7 @@ return function(data, env)
 				local PossiblePlayers = tab:Add("ScrollingFrame",{
 					Size = UDim2.new(1, -10, 0, 85);
 					Position = UDim2.new(0, 5, 0, 27);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 					BorderColor3 = Color3.new(0,0,0);
@@ -67,7 +67,7 @@ return function(data, env)
 				local reasonFrame = tab:Add("Frame",{
 					Size = UDim2.new(1, -10, 1, -65);
 					Position = UDim2.new(0, 5, 0, 30);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 				})
@@ -179,7 +179,7 @@ return function(data, env)
 				local PossiblePlayers = tab:Add("ScrollingFrame",{
 					Size = UDim2.new(1, -10, 0, 85);
 					Position = UDim2.new(0, 5, 0, 27);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 					BorderColor3 = Color3.new(0,0,0);
@@ -189,7 +189,7 @@ return function(data, env)
 				local reasonFrame = tab:Add("Frame",{
 					Size = UDim2.new(1, -10, 1, -65);
 					Position = UDim2.new(0, 5, 0, 30);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 				})
@@ -315,7 +315,7 @@ return function(data, env)
 				local PossiblePlayers = tab:Add("ScrollingFrame",{
 					Size = UDim2.new(1, -10, 0, 85);
 					Position = UDim2.new(0, 5, 0, 27);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 					BorderColor3 = Color3.new(0,0,0);
@@ -335,7 +335,7 @@ return function(data, env)
 				local reasonFrame = tab:Add("Frame",{
 					Size = UDim2.new(1, -10, 1, -90);
 					Position = UDim2.new(0, 5, 0, 55);
-					BackgroundColor3 = Color3.new(20/255, 20/255, 20/255);
+					BackgroundColor3 = Color3.fromRGB(20, 20, 20);
 					BackgroundTransparency = 0;
 					BorderSizePixel = 0;
 				})
