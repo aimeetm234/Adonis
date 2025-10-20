@@ -2737,7 +2737,7 @@ return function(data, env)
 			child.MidImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 			child.TopImage = "rbxasset://textures/ui/Scroll/scroll-top.png"
 			child.ScrollBarImageTransparency = 0.75
-			child.ScrollBarImageColor3 = Color3.fromRGB(255, 255, 255)
+			child.ScrollBarImageColor3 = Color3.new(1, 1, 1)
 
 			--local propList = {
 			--	Size = true;

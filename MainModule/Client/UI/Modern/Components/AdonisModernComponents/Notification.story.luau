@@ -17,7 +17,7 @@ function NotificationStory:render()
 			Size = UDim2.fromOffset(200, 100),
 			BackgroundTransparency = 0.9,
 			Text = '[Roact.Children] goes here.\n200 x 100 test TextLabel',
-			TextColor3 = Color3.fromRGB(255, 255, 255),
+			TextColor3 = Color3.new(1, 1, 1),
 		})
 	})
 end

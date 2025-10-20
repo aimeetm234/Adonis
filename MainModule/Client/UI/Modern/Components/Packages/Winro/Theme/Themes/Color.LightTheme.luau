@@ -1,18 +1,18 @@
 return {
 	['colors/Fill_Color/Text/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.10588235294117643;
 	};
 	['colors/Fill_Color/Text/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.3921568627450981;
 	};
 	['colors/Fill_Color/Text/Tertiary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.5529411764705883;
 	};
 	['colors/Fill_Color/Text/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.6392156862745098;
 	};
 	['colors/Fill_Color/Accent_Text/Primary'] = {
@@ -28,31 +28,31 @@ return {
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Accent_Text/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.6392156862745098;
 	};
 	['colors/Fill_Color/Text_On_Accent/Primary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Text_On_Accent/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Fill_Color/Text_On_Accent/Disabled'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Text_On_Accent/Selected_Text'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Control/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Fill_Color/Control/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Fill_Color/Control/Secondary'] = {
@@ -68,7 +68,7 @@ return {
 		Transparency = 0.23921568627450984;
 	};
 	['colors/Fill_Color/Control/Input_Active'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Control/Disabled'] = {
@@ -76,51 +76,51 @@ return {
 		Transparency = 0.6980392156862745;
 	};
 	['colors/Fill_Color/Control_Strong/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.5529411764705883;
 	};
 	['colors/Fill_Color/Control_Strong/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.6823529411764706;
 	};
 	['colors/Fill_Color/Subtle/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Fill_Color/Subtle/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9607843137254902;
 	};
 	['colors/Fill_Color/Subtle/Tertiary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9764705882352941;
 	};
 	['colors/Fill_Color/Subtle/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 1;
 	};
 	['colors/Fill_Color/Control_Solid/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Control_Alt/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Fill_Color/Control_Alt/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9764705882352941;
 	};
 	['colors/Fill_Color/Control_Alt/Tertiary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Fill_Color/Control_Alt/Quarternary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9058823529411765;
 	};
 	['colors/Fill_Color/Control_Alt/Disabled'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Fill_Color/Accent/Default'] = {
@@ -136,7 +136,7 @@ return {
 		Transparency = 0.19999999999999996;
 	};
 	['colors/Fill_Color/Accent/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.7843137254901961;
 	};
 	['colors/Fill_Color/Accent/Selected_Text_Background'] = {
@@ -176,11 +176,11 @@ return {
 		Transparency = 0;
 	};
 	['colors/Fill_Color/System/Neutral'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.5529411764705883;
 	};
 	['colors/Fill_Color/System/Neutral_Background'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9764705882352941;
 	};
 	['colors/Fill_Color/System/Solid_Neutral'] = {
@@ -196,7 +196,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Control_On_Image/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.21176470588235297;
 	};
 	['colors/Fill_Color/Control_On_Image/Secondary'] = {
@@ -208,47 +208,47 @@ return {
 		Transparency = 0;
 	};
 	['colors/Fill_Color/Control_On_Image/Disabled'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Stroke_Color/Control_Stroke/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Stroke_Color/Control_Stroke/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.8392156862745098;
 	};
 	['colors/Stroke_Color/Control_Stroke/On_Accent_Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.9215686274509804;
 	};
 	['colors/Stroke_Color/Control_Stroke/On_Accent_Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.6;
 	};
 	['colors/Stroke_Color/Control_Stroke/On_Accent_Tertiary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.7843137254901961;
 	};
 	['colors/Stroke_Color/Control_Stroke/On_Accent_Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Stroke_Color/Control_Stroke/For_Strong_Fill_When_On_Image'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.6509803921568628;
 	};
 	['colors/Stroke_Color/Control_Strong_Stroke/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.3921568627450981;
 	};
 	['colors/Stroke_Color/Control_Strong_Stroke/Disabled'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.7843137254901961;
 	};
 	['colors/Stroke_Color/Card_Stroke/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Stroke_Color/Card_Stroke/Default_Solid'] = {
@@ -256,7 +256,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Stroke_Color/Divider_Stroke/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9215686274509804;
 	};
 	['colors/Stroke_Color/Surface_Stroke/Default'] = {
@@ -264,19 +264,19 @@ return {
 		Transparency = 0.6;
 	};
 	['colors/Stroke_Color/Surface_Stroke/Flyout'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Stroke_Color/Focus_Stroke/Outer'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.10588235294117643;
 	};
 	['colors/Stroke_Color/Focus_Stroke/Inner'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Card_Background/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Background/Fill_Color/Card_Background/Secondary'] = {
@@ -284,39 +284,39 @@ return {
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Background/Fill_Color/Card_Background/Tertiary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Smoke/Default'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.6980392156862745;
 	};
 	['colors/Background/Fill_Color/Layer/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Background/Fill_Color/Layer/Alt'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Layer_On_Acrylic/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.7490196078431373;
 	};
 	['colors/Background/Fill_Color/Layer_On_Accent_Acrylic/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.7490196078431373;
 	};
 	['colors/Background/Fill_Color/Layer_On_Mica_Base_Alt/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Background/Fill_Color/Layer_On_Mica_Base_Alt/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Background/Fill_Color/Layer_On_Mica_Base_Alt/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9607843137254902;
 	};
 	['colors/Background/Fill_Color/Layer_On_Mica_Base_Alt/Tertiary'] = {
@@ -364,7 +364,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Solid_Background/Quarternary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Solid_Background/Quinary'] = {
@@ -372,15 +372,15 @@ return {
 		Transparency = 0;
 	};
 	['colors/Background/Fill_Color/Solid_Background/Senary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Shell/Fill_Color/Caption_Close_Text/Primary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Shell/Fill_Color/Caption_Close_Text/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Shell/Fill_Color/Caption_Control_Close_Fill/Primary'] = {
@@ -392,111 +392,111 @@ return {
 		Transparency = 0.10196078431372546;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button_Alt/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button_Alt/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.7490196078431373;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button_Alt/Tertiary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.8745098039215686;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button_Alt/Disabled'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.8745098039215686;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.25098039215686274;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button/Tertiary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Shell/Fill_Color/Keyboard_Button/Disabled'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.8745098039215686;
 	};
 	['colors/Shell/Fill_Color/Taskbar_Item_Fill/Primary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Shell/Fill_Color/Taskbar_Item_Fill/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Shell/Fill_Color/Taskbar_Item_Fill/Tertiary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.6980392156862745;
 	};
 	['colors/Shell/Fill_Color/Taskbar_Item_Fill/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Shell/Fill_Color/Taskbar_Item_Indicator/Running'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.5607843137254902;
 	};
 	['colors/Shell/Fill_Color/Subtle_Item_Fill/Transparent'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 1;
 	};
 	['colors/Shell/Fill_Color/Subtle_Item_Fill/Secondary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.3019607843137255;
 	};
 	['colors/Shell/Fill_Color/Subtle_Item_Fill/Tertiary'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.4980392156862745;
 	};
 	['colors/Shell/Fill_Color/Shimmer_Fill/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9725490196078431;
 	};
 	['colors/Shell/Fill_Color/Shimmer_Fill/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9450980392156862;
 	};
 	['colors/Shell/Fill_Color/Illustration_On_Acrylic/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.8980392156862745;
 	};
 	['colors/Shell/Stroke_Color/Keyboard_Button/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Shell/Stroke_Color/Keyboard_Button/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.8392156862745098;
 	};
 	['colors/Shell/Stroke_Color/Taskbar_Item_Stroke/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9098039215686274;
 	};
 	['colors/Shell/Stroke_Color/Taskbar_Item_Stroke/Secondary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9411764705882353;
 	};
 	['colors/Shell/Stroke_Color/Taskbar_Item_Stroke/Tertiary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9686274509803922;
 	};
 	['colors/Shell/Stroke_Color/Taskbar_Item_Stroke/Quarternary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9803921568627451;
 	};
 	['colors/Shell/Stroke_Color/Taskbar_Item_Stroke/Quinary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.9803921568627451;
 	};
 	['colors/Shell/Stroke_Color/Illustration_On_Acrylic_Strong/Primary'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0.5607843137254902;
 	};
 	['colors/Shell/Background/Fill_Color/Card_Background_On_Thin_Acrylic/Default'] = {
@@ -508,7 +508,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Shell/Background/Fill_Color/Layer_On_Thin_Acrylic/Default'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0.7490196078431373;
 	};
 	['colors/Shell/Background/Fill_Color/Acrylic/Thin_Acrylic'] = {
@@ -516,7 +516,7 @@ return {
 		Transparency = 0.5607843137254902;
 	};
 	['colors/Contrast/Aquatic/Window_Text'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Contrast/Aquatic/Window'] = {
@@ -532,7 +532,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Contrast/Aquatic/Button_Text'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Contrast/Aquatic/Button'] = {
@@ -580,7 +580,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Contrast/Dusk/Window_Text'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Contrast/Dusk/Window'] = {
@@ -612,11 +612,11 @@ return {
 		Transparency = 0;
 	};
 	['colors/Contrast/Night_Sky/Window_Text'] = {
-		Color = Color3.fromRGB(255, 255, 255);
+		Color = Color3.new(1, 1, 1);
 		Transparency = 0;
 	};
 	['colors/Contrast/Night_Sky/Window'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0;
 	};
 	['colors/Contrast/Night_Sky/Highlight_Text'] = {
@@ -632,7 +632,7 @@ return {
 		Transparency = 0;
 	};
 	['colors/Contrast/Night_Sky/Button'] = {
-		Color = Color3.fromRGB(0, 0, 0);
+		Color = Color3.new(0, 0, 0);
 		Transparency = 0;
 	};
 	['colors/Contrast/Night_Sky/Hotlight'] = {
@@ -649,9 +649,9 @@ return {
 		Color = Color3.fromRGB(150, 150, 150);
 		Transparency = 0.2;
 		ColorSequence = ColorSequence.new({
-			[1] = ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-			[2] = ColorSequenceKeypoint.new(0.6, Color3.fromRGB(255, 255, 255)),
-			[3] = ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0)),
+			[1] = ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+			[2] = ColorSequenceKeypoint.new(0.6, Color3.new(1, 1, 1)),
+			[3] = ColorSequenceKeypoint.new(1, Color3.new(0, 0, 0)),
 		});
 		TransparencySequence = NumberSequence.new({
 			[1] = NumberSequenceKeypoint.new(0, 1 - 0.08),

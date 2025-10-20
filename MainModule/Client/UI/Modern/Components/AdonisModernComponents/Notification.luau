@@ -10,7 +10,7 @@ return function (props)
 
 	return new("Frame", {
 		AutomaticSize = Enum.AutomaticSize.Y,
-		BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+		BackgroundColor3 = Color3.new(0, 0, 0),
 		BackgroundTransparency = 0.4,
 		BorderSizePixel = 0,
 		Size = UDim2.fromScale(1, 0),
@@ -18,7 +18,7 @@ return function (props)
 	}, {
 		content = new("Frame", {
 			AutomaticSize = Enum.AutomaticSize.Y,
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+			BackgroundColor3 = Color3.new(1, 1, 1),
 			BackgroundTransparency = 1,
 			LayoutOrder = 1,
 			Size = UDim2.fromScale(1, 0),
@@ -30,23 +30,23 @@ return function (props)
 		}),
 
 		header = new("Frame", {
-			BackgroundColor3 = Color3.fromRGB(0, 0, 0),
+			BackgroundColor3 = Color3.new(0, 0, 0),
 			BackgroundTransparency = 1,
 			BorderColor3 = Color3.fromRGB(27, 42, 53),
 			BorderSizePixel = 0,
 			Size = UDim2.new(1, 0, 0, 25),
 		}, {
 			fill = new("CanvasGroup", {
-				GroupColor3 = Color3.fromRGB(0, 0, 0),
+				GroupColor3 = Color3.new(0, 0, 0),
 				GroupTransparency = 0.5,
-				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundColor3 = Color3.new(1, 1, 1),
 				BackgroundTransparency = 1,
 				BorderSizePixel = 0,
 				Size = UDim2.fromScale(1, 1),
 				ZIndex = 0,
 			}, {
 				corner = new("Frame", {
-					BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundColor3 = Color3.new(1, 1, 1),
 					Size = UDim2.new(1, 0, 0, 35),
 				}, {
 					uICorner = new("UICorner", {
@@ -55,7 +55,7 @@ return function (props)
 
 					cornerFilling = new("Frame", {
 						AnchorPoint = Vector2.new(0, 1),
-						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+						BackgroundColor3 = Color3.new(1, 1, 1),
 						BorderSizePixel = 0,
 						Position = UDim2.fromScale(0, 1),
 						Size = UDim2.new(1, 0, 0, 5),
@@ -64,7 +64,7 @@ return function (props)
 			}),
 
 			wrapper = new("Frame", {
-				BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+				BackgroundColor3 = Color3.new(1, 1, 1),
 				BackgroundTransparency = 1,
 				Size = UDim2.fromScale(1, 1),
 			}, {
@@ -76,13 +76,13 @@ return function (props)
 				}),
 
 				left = new("Frame", {
-					BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundColor3 = Color3.new(1, 1, 1),
 					BackgroundTransparency = 1,
 					Size = UDim2.fromScale(1, 1),
 				}, {
 					icon = props.Image and new("ImageLabel", {
 						Image = props.Image,
-						BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+						BackgroundColor3 = Color3.new(1, 1, 1),
 						BackgroundTransparency = 1,
 						BorderSizePixel = 0,
 						Position = UDim2.fromOffset(5, 5),
@@ -94,7 +94,7 @@ return function (props)
 					title = new("TextLabel", {
 						FontFace = Font.fromEnum(Enum.Font.SourceSansBold),
 						Text = props.TitleText,
-						TextColor3 = Color3.fromRGB(255, 255, 255),
+						TextColor3 = Color3.new(1, 1, 1),
 						TextSize = 14,
 						TextStrokeColor3 = Color3.fromRGB(90, 90, 90),
 						TextWrapped = true,
@@ -116,14 +116,14 @@ return function (props)
 				}),
 
 				right = new("Frame", {
-					BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+					BackgroundColor3 = Color3.new(1, 1, 1),
 					BackgroundTransparency = 1,
 					Size = UDim2.fromScale(1, 1),
 				}, {
 					close = new("TextButton", {
 						FontFace = Font.fromEnum(Enum.Font.FredokaOne),
 						Text = "x",
-						TextColor3 = Color3.fromRGB(255, 255, 255),
+						TextColor3 = Color3.new(1, 1, 1),
 						TextSize = 19,
 						TextWrapped = true,
 						BackgroundColor3 = Color3.fromRGB(195, 33, 35),
